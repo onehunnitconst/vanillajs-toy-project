@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>From Validator</title>
+</head>
+<body>
+  <div class="container">
+    <form id="form" class="form">
+      <h2>회원가입</h2>
+      <div class="form-control">
+        <label for="username">이름</label>
+        <input type="text" id="username" placeholder="ex) 홍길동, 3~15자 이내">
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="email">이메일</label>
+        <input type="text" id="email" placeholder="ex) abc@test.com">
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" placeholder="영문, 숫자로 6~18자 이내">
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="conf_password">비밀번호 확인</label>
+        <input type="password" id="password2" placeholder="비밀번호 확인">
+        <small>Error message</small>
+      </div>
+      <button type="submit">확인</button>
+    </form>
+  </div>
+  <h1 class="test"></h1>
+  <script src="index.js"></script>
+</body>
+</html>
