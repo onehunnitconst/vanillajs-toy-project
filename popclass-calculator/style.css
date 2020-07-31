@@ -37,9 +37,12 @@ h1 {
     width: 100%;
     font-size: 16px;
     padding: 10px 10px 10px 5px;
+    border: 0px;
+}
+
+.input:not(.fc-input) {
     -webkit-appearance: none;
     -moz-appearance: none;
-    border: 0px;
 }
 
 .table-list {
