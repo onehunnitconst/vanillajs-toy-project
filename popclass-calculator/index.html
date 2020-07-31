@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>팝클래스 계산기</title>
-        <link rel="stylesheet" href="style.css" media="screen and (min-width: 1441px)">
-        <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 1440px)">
+        <link rel="stylesheet" href="style.css" media="screen and (min-width: 961px)">
+        <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 960px)">
     </head>
     <body>
         <h1>팝클래스 계산기</h1>
@@ -17,18 +17,37 @@
         <div class="input-container">
             <table>
                 <thead id="input-header">
-                    <th>No.</th>
-                    <th>레벨</th>
-                    <th>곡명</th>
-                    <th>스코어</th>
-                    <th>FC</th>
-                    <th>Class</th>
+                    <th class="th1">No.</th>
+                    <th class="th2">레벨</th>
+                    <th class="th3">곡명</th>
+                    <th class="th4">스코어</th>
+                    <th class="th5">FC</th>
+                    <th class="th6">Class</th>
                 </thead>
                 <tbody id="input-contents">
                 </tbody>
             </table>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="script.js"></script>
         <script src="score.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyCEzrXtiMLzQbG6GmyNLKagtVsMmwIBSH0",
+              authDomain: "macaron-info.firebaseapp.com",
+              databaseURL: "https://macaron-info.firebaseio.com",
+              projectId: "macaron-info",
+              storageBucket: "macaron-info.appspot.com",
+              messagingSenderId: "694815228388",
+              appId: "1:694815228388:web:bcd87ab08853ad0e9c47f1",
+              measurementId: "G-4SCQ9W41NJ"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
     </body>
 </html>

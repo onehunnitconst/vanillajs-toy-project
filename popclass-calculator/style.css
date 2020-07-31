@@ -34,13 +34,39 @@ h1 {
 }
 
 .input {
+    width: 100%;
     font-size: 16px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 10px 10px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     border: 0px;
 }
 
 .table-list {
     font-size: 20px;
+}
+
+
+.name-list {
+    width: 50vh;
+}
+
+
+.level-list {
+    width: 15vh;
+}
+
+.score-list {
+    width: 25vh;
+}
+
+.fc-list {
+    width: 10vh;
+}
+
+
+.popclass-list {
+    width: 20vh;
 }
 
 th {

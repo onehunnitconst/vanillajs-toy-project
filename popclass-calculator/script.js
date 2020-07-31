@@ -10,7 +10,7 @@ for (var i = 0; i < 50; i++) {
     var level_input = document.createElement('select');
     level_input.className = "input level-input"
 
-    for (var j = 0; j < 50; j++) {
+    for (var j = 47; j < 50; j++) {
         var level_value = document.createElement('option');
         level_value.value = `${j+1}`
         level_value.appendChild(document.createTextNode(`${j+1}`));
@@ -22,11 +22,11 @@ for (var i = 0; i < 50; i++) {
     level.className = "table-list level-list";
     level.appendChild(level_input);
     
-    var name_input = document.createElement('input');
+    var name_input = document.createElement('select');
     name_input.className = "input name-input";
 
     var sname = document.createElement('td');
-    sname.className = "table-list";
+    sname.className = "table-list name-list";
     sname.appendChild(name_input);
 
     var score_input = document.createElement('input');
@@ -34,7 +34,7 @@ for (var i = 0; i < 50; i++) {
     score_input.type = "number"
 
     var score = document.createElement('td');
-    score.className = "table-list";
+    score.className = "table-list score-list";
     score.appendChild(score_input);
 
     var fc_check = document.createElement('input');
@@ -42,7 +42,7 @@ for (var i = 0; i < 50; i++) {
     fc_check.type = "checkbox"
 
     var fullcombo = document.createElement('td');
-    fullcombo.className = "table-list";
+    fullcombo.className = "table-list fc-list";
     fullcombo.appendChild(fc_check);
 
     var popclass = document.createElement('td');

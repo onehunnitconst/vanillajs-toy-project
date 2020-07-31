@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 
+html { -webkit-text-size-adjust: none; }
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
     display: flex;
@@ -10,7 +12,7 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .container {
@@ -27,41 +29,54 @@ h1 {
     margin-left: 10px;
 }
 
+.input-container {
+    padding: 15px;
+}
+
 .input {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 12px;
-    padding: 5px 5px 5px 5px;
+    width: 100%;
+    font-size: 10px;
+    padding: 10px 10px 10px 5px;
     border: 0px;
 }
 
-.level-input {
-    max-width: 4vh;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.name-input {
-    max-width: 8vh;
-}
-
 .score-input {
-    max-width: 6vh;
+    width: 70%;
+    font-size: 9px;
+}
+
+.input:not(.fc-input) {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-.fc-input {
-    max-width: 3vh;
+.table-list {
+    font-size: 12px;
 }
+
+
+.name-list {
+    width: 50vh;
+}
+
+
+.level-list {
+    width: 15vh;
+}
+
+.score-list {
+    width: 25vh;
+}
+
+.fc-list {
+    width: 10vh;
+}
+
 
 .popclass-list {
-    max-width: 4vh;
-    color: #ff9934;
+    width: 20vh;
 }
 
-select {
-    box-sizing: content-box;
-}
 
 th {
     font-size: 12px;
@@ -73,7 +88,6 @@ th {
 }
 
 th, td {
-    font-size: 12px;
     text-align: center;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 5px 5px 5px;
 }
