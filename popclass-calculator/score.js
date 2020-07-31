@@ -65,6 +65,7 @@ function readText(lv) {
         }
     }
     rawFile.send(null);
+    rawFile.close();
 
     return allText;
 }
