@@ -29,25 +29,34 @@ h1 {
 
 .input {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-    padding: 10px 15px 10px 15px;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
     border: 0px;
 }
 
 .level-input {
-    width: 8vh;
+    max-width: 4vh;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .name-input {
-    width: 16vh;
+    max-width: 8vh;
 }
 
 .score-input {
-    width: 12vh;
+    max-width: 6vh;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .fc-input {
-    width: 4vh;
+    max-width: 3vh;
+}
+
+.popclass-list {
+    max-width: 4vh;
+    color: #ff9934;
 }
 
 select {
@@ -64,6 +73,7 @@ th {
 }
 
 th, td {
+    font-size: 12px;
     text-align: center;
     padding: 5px 10px 5px 10px;
 }

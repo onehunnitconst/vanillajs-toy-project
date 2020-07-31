@@ -23,7 +23,6 @@ function calculate(e) {
     }
     console.log(score);
     popclasses[i].innerHTML=`${score.toFixed(4)}`
-
     var total_score = 0;
 
     for(var j = 0; j < 50; j++){
