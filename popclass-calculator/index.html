@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>팝클래스 계산기</title>
+        <link rel="stylesheet" href="style.css" media="screen and (min-width: 768px)">
+        <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 767px)">
+    </head>
+    <body>
+        <h1>팝클래스 계산기</h1>
+        <div class="container">
+            <p>현재 팝클래스: </p>
+            <p id="popclass" class="popclass">0.00</p>
+        </div>
+        <div class="input-container">
+            <table>
+                <thead id="input-header">
+                    <th>번호</th>
+                    <th>레벨</th>
+                    <th>곡명</th>
+                    <th>스코어</th>
+                    <th>풀콤보</th>
+                    <th>반영 스코어</th>
+                </thead>
+                <tbody id="input-contents">
+                </tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>
+        <script src="score.js"></script>
+    </body>
+</html>
